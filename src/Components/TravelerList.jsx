@@ -8,7 +8,7 @@ export const TravelerList = ({ search, type }) => {
     const { data, isLoading } = useQuery(["travelers", search, type], async () => {
         const response = await axios.get("https://sandbox1.xola.com/api/users", {
             params: { search: search, type: type },
-            headers: { "X-API-KEY": "3SKtNGHg79GYLbf9sYRtBhKUQIiVRU8cHmoAKH3EB-A" },
+            headers: { "X-API-KEY": "" },
         });
         return response.data;
     });
