@@ -15,6 +15,7 @@ export const TravelerList = ({ search, type }) => {
     if (isLoading) {
         return <Spinner />;
     }
+
     return (
         <div>
             {data.data.map((user) => {
